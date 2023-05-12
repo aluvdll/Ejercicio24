@@ -90,9 +90,9 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem operacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lISTAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fORMATOSToolStripMenuItem;
+        public System.Windows.Forms.ToolStripMenuItem operacionesToolStripMenuItem;
     }
 }
 

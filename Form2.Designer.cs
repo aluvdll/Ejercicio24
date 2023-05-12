@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstBox_Form2 = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.añadirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,15 +39,15 @@
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lstBox_Form2
             // 
-            this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(277, 106);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(224, 264);
-            this.listBox1.TabIndex = 0;
+            this.lstBox_Form2.ContextMenuStrip = this.contextMenuStrip1;
+            this.lstBox_Form2.FormattingEnabled = true;
+            this.lstBox_Form2.ItemHeight = 20;
+            this.lstBox_Form2.Location = new System.Drawing.Point(282, 106);
+            this.lstBox_Form2.Name = "lstBox_Form2";
+            this.lstBox_Form2.Size = new System.Drawing.Size(224, 264);
+            this.lstBox_Form2.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
@@ -72,8 +72,9 @@
             // 
             this.eliminarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripMenuItem.Image")));
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(248, 32);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(199, 32);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
+            this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
             // eliminarTodoToolStripMenuItem
             // 
@@ -81,6 +82,7 @@
             this.eliminarTodoToolStripMenuItem.Name = "eliminarTodoToolStripMenuItem";
             this.eliminarTodoToolStripMenuItem.Size = new System.Drawing.Size(248, 32);
             this.eliminarTodoToolStripMenuItem.Text = "Eliminar Todo";
+            this.eliminarTodoToolStripMenuItem.Click += new System.EventHandler(this.eliminarTodoToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -88,13 +90,14 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(248, 32);
             this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstBox_Form2);
             this.Name = "Form2";
             this.Text = "Palabra de Paso";
             this.contextMenuStrip1.ResumeLayout(false);
@@ -103,12 +106,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem añadirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarTodoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        public System.Windows.Forms.ListBox lstBox_Form2;
     }
 }

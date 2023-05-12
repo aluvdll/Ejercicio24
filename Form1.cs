@@ -19,13 +19,14 @@ namespace Ejercicio24
 
         private void lISTAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 FPalabraDePaso = new Form2();
-            FPalabraDePaso.Show();
+            Form2 F2 = new Form2();
+            F2.Show();
         }
 
         private void fORMATOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form4 F4 = new Form4();
+            F4.Show();
         }
     }
 }
