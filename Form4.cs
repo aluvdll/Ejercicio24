@@ -14,6 +14,7 @@ namespace Ejercicio24
 {
     public partial class Form4 : Form
     {
+
         public Form4()
         {
             InitializeComponent();
@@ -42,6 +43,18 @@ namespace Ejercicio24
         {
             Font ftBold = new Font(lbl_texto_F4.Font.FontFamily, lbl_texto_F4.Font.Size, FontStyle.Bold);
             lbl_texto_F4.Font = ftBold;
+        }
+
+        private void cursivaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Font fcurs = new Font(lbl_texto_F4.Font.FontFamily, lbl_texto_F4.Font.Size, FontStyle.Italic);
+            lbl_texto_F4.Font = fcurs;    
+        }
+
+        private void subrayadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Font fcurs = new Font(lbl_texto_F4.Font.FontFamily, lbl_texto_F4.Font.Size, FontStyle.Underline);
+            lbl_texto_F4.Font = fcurs;
         }
     }
 }
